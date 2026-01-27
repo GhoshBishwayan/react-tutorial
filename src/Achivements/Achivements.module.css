@@ -1,0 +1,16 @@
+.tourny{
+    height: auto;
+    width: 50%;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(30, 0, 79);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.tourny p{
+    color: rgb(255, 255, 255);
+    margin: 0;
+}

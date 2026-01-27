@@ -1,0 +1,30 @@
+
+.card{
+  margin: 10px;
+  border: 1px solid rgb(0, 64, 94);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsl(240, 55%, 76%);
+  padding: 20px;
+  text-align: center;
+  max-width: 250px;
+  display: inline-block;
+
+}
+
+.card .card-image{
+  height: auto;
+  width: 80%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card .card-title{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  color: hsl(240, 76%, 49%);
+}
+.card .card-description{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  color: hsl(240, 76%, 49%);
+}
