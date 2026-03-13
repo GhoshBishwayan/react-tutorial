@@ -1,9 +1,8 @@
 //inline css
-
-function Button2(){
+function Button2(props){
 
     const styles = {
-        backgroundColor: "hsl(0, 0.00%, 40%)",
+        backgroundColor: "hsl(213, 100%, 18%)",
         color: "aliceblue",
         padding: "10px 20px",
         borderRadius: "5px",
@@ -11,9 +10,15 @@ function Button2(){
         cursor: "pointer",
         display: "block",
         margin: "10px",
+        textAlign: "center",
     }
+
     
-    return(<button style={styles}>Click Me</button>)
+    return( 
+        <button onClick={props.onClick} className={styles}>
+            Change Image
+        </button>
+    )
 }
 
 export default Button2
