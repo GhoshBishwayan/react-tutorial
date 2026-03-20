@@ -1,4 +1,6 @@
 import styles from "./Awards.module.css"
+import PropTypes from 'prop-types'
+
 function Awards(props){
 
     const category = props.category;
@@ -30,10 +32,10 @@ function Awards(props){
 }
 
 Awards.propTypes = {
-    category: propTypes.string,
-    items: propTypes.arrayOf(propTypes.shape({id: propTypes.number,
-                                             name:propTypes.string,
-                                             year: propTypes.number,
+    category: PropTypes.string,
+    items: PropTypes.arrayOf(PropTypes.shape({id: PropTypes.number,
+                                             name:PropTypes.string,
+                                             year: PropTypes.number,
 
     }))
 }
