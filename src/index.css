@@ -12,8 +12,9 @@
 }
 
 .card .card-image{
-  height: auto;
-  width: 80%;
+  object-fit: cover;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
