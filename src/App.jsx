@@ -1,11 +1,13 @@
 // import Header from './header.jsx'
 // import Footer from './Footer.jsx'
 // import Food from './Food.jsx'
-import Awards from './List/Awards.jsx'
-import Card from './Card.jsx'
+import Awards from './List/Awards.jsx';
+import Card from './Card.jsx';
+// import Card from './MyComponent.jsx'
+import Comments from './Comments/Comments.jsx';
 import Button from './Button/Button.jsx';
 import Button2 from './Button2.jsx';
-import Student from './Student.jsx'
+import Student from './Student.jsx';
 import Achivements from './Achivements/Achivements.jsx';
 // import Button2 from './Button2.jsx'; 
 
@@ -23,12 +25,14 @@ function App() {
     <Button/>
     <Button2/> */}
     <Card/>
-  
+      
+    <Button/>
+    <Comments/>
     <Achivements cupName="World Cup" year = {2022} playerOfTheTourny={true} age={35} />
     <Achivements cupName="UCL" year = {2015} playerOfTheTourny={true} age={26} />
     <Achivements year={2023}/>
     <Student name='Neymar' age={32} isStudent={true} />
-
+      {/* <MyComponent/> */}
   </>
   );
 }
