@@ -5,6 +5,7 @@ function Comments(){
     const [name, setName] = useState("Guest");
     const [comment, setComment] = useState("");
     const [payment, setPayment] = useState("");
+    const [amount, setAmount] = useState("");
     
     function handleNameChange(event){
         setName(event.target.value);
@@ -16,6 +17,9 @@ function Comments(){
     function commentValue(event){
         setPayment(event.target.value);
     }
+    function amountValue(event){
+        setAmount(event.target.value);
+    }
 
     return( 
         <div>
@@ -26,6 +30,7 @@ function Comments(){
                 <p className={styles.userComment}>Comment: {comment}</p>
             </div>
                 <p className={styles.userComment}>Payment: {payment}</p>
+                <p className={styles.userComment}>Donation amount seleted: ${amount}</p>
 
             <select value={payment} onChange={commentValue}>
                 <option value="">Select an option</option>
@@ -33,6 +38,26 @@ function Comments(){
                 <option value="Mastercard">Mastercard</option>
                 <option value="Bitcoin">Bitcoin</option>
             </select>
+
+            <label>
+                <input type="radio" value="10"
+                    checked={amount === "10"}
+                    onChange={amountValue}/>
+                $10
+            </label>
+            <label>
+                <input type="radio" value="15"
+                    checked={amount === "15"}
+                    onChange={amountValue}/>
+                $15
+            </label>
+            <label>
+                <input type="radio" value="20"
+                    checked={amount === "20"}
+                    onChange={amountValue}/>
+                $20
+            </label>
+
         </div>
     )
 }
